@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_service" />
+
+        <LinearLayout
+            android:id="@+id/llAddToCart"
+            style="@style/LightFlatWaveColorButtonRippleStyle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/btn_bg_"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <com.common.view.CTextView
+                style="@style/txt_fff_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add To Cart" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_shopping_cart_black_24dp"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.common.view.CTextView
+            android:id="@+id/tvProductName"
+            style="@style/txt_theme_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mom fir jeans" />
+
+        <com.common.view.CTextView
+            android:id="@+id/tvProductPrice"
+            style="@style/txt_theme_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$199.00" />
+    </LinearLayout>
+</LinearLayout>

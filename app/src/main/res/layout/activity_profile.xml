@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/topbar" />
+
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.common.view.CTextView
+                    style="@style/txt_theme_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name" />
+
+                <com.common.view.CEditTextView
+                    android:id="@+id/editProfileUserName"
+                    style="@style/txt_theme_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/squere_edittext"
+                    android:hint="Enter your user name"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColorHint="@color/gray_light_" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <com.common.view.CTextView
+                    style="@style/txt_theme_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+
+                <com.common.view.CEditTextView
+                    android:id="@+id/editProfileEmail"
+                    style="@style/txt_theme_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/squere_edittext"
+                    android:enabled="false"
+                    android:hint="Enter your user email"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/md_light_disabled"
+                    android:textColorHint="@color/gray_light_" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.common.view.CTextView
+                    style="@style/txt_theme_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping address" />
+
+                <com.common.view.CEditTextView
+                    android:id="@+id/editProfileShipping"
+                    style="@style/txt_theme_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/squere_edittext"
+                    android:hint="Enter your shipping address"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColorHint="@color/gray_light_" />
+            </LinearLayout>
+
+            <com.common.view.CBButtonViewM
+                android:id="@+id/btnProfileSubmit"
+                style="@style/LightFlatWaveColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_bg_"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

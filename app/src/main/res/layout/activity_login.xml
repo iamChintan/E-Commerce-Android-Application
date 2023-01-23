@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_dim"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.common.view.CTextView
+                style="@style/txt_theme_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editEmail"
+                style="@style/txt_theme_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/squere_edittext"
+                android:hint="Enter your email"
+                android:padding="15dp"
+                android:textColorHint="@color/gray_light_" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.common.view.CTextView
+                style="@style/txt_theme_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editPassword"
+                style="@style/txt_theme_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/squere_edittext"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColorHint="@color/gray_light_" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.common.view.CTextView
+                    style="@style/txt_fff_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="don't have an Account?" />
+
+                <com.common.view.CTextView
+                    android:id="@+id/tvSignup"
+                    style="@style/txt_theme_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Signup Now!" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.common.view.CBButtonViewM
+            android:id="@+id/btnLogin"
+            style="@style/LightFlatWaveColorButtonRippleStyle_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg_"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
